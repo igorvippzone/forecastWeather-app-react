@@ -1,0 +1,22 @@
+.view-location {
+  align-self: stretch;
+  border-right: 1px solid var(--main);
+
+  /* max-width: 30%; */
+  /* width: 100%; */
+padding-right: 20px;
+  display: flex;
+  align-items: center;
+
+  grid-area: hViewLocation;
+}
+
+
+@media (max-width: 991px) {
+  .view-location {
+    max-width: 70%;
+    width: 100%;
+  border: none; 
+  padding: 0;
+  }
+}

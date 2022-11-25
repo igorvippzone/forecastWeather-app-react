@@ -1,0 +1,68 @@
+:root .dark {
+  --main: rgb(103, 113, 117);
+  --main-contrast: rgb(0, 37, 51);
+  --secondary: rgb(41, 239, 249);
+  --secondary-contrast: rgb(79, 199, 232);
+  --secondary-opacity: rgba(3, 45, 75, 0.627);
+
+  --text: rgb(226, 250, 253);
+  --text-hover: rgb(9, 95, 129);
+}
+
+:root .light {
+
+  --main: rgb(0, 43, 60);
+  --main-contrast: rgb(0, 37, 51);
+  --secondary: rgb(2, 125, 132);
+  --secondary-contrast: rgb(0, 41, 144);
+  --secondary-opacity: rgba(255, 255, 255, 0.2);
+
+  --text: rgb(0, 28, 39);
+  --text-hover: rgb(226, 250, 253)
+}
+
+:root{
+  --radius: 20px
+}
+
+@media (max-width: 767px){
+  :root{
+    --radius: 10px
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1vw;
+
+  width: 100vw;
+  height: 100vh;
+
+
+  /* background: url(./assets/bg-sky.jpg) no-repeat 100% / cover, rgb(33, 127, 195); */
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  overflow: auto;
+  color: var(--text);
+
+  transition: color .3s;
+}
+
+.app.light{
+  background-image: url(./assets/bg-light-clear-sky.jpg);
+}
+.app.dark{
+  background-image: url(./assets/bg-dark-clear-sky.jpg);
+}
+
+@media (max-width:767px) {
+  .app {
+    padding-bottom: 100px;
+  }
+}

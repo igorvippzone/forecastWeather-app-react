@@ -1,0 +1,23 @@
+.switch-theme{
+  border-left: 1px solid var(--main);
+  padding-left: 1vw;
+  grid-area: hSwitchTheme;
+}
+
+.button {
+  border: none;
+  font-size: 26px;
+}
+
+.button:hover,
+.button:active{
+  background-color: transparent;
+
+}
+
+@media (max-width: 991px) {
+  .switch-theme{
+    border-left: none;
+    padding-left: 0;
+  }
+}

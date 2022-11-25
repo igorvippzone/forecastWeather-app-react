@@ -1,0 +1,31 @@
+.card-header{
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 20px;
+  margin-bottom: 2vw;
+
+  border-bottom: 1px solid var(--main);
+}
+
+.title{
+  text-transform: uppercase;
+  font-weight: 500;
+
+}
+
+.date{
+font-weight: 500;
+font-size: 18px;
+
+color: var(--secondary-contrast);
+}
+
+.temp{
+  font-size: 48px;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  line-height: normal;
+}

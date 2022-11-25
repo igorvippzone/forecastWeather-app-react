@@ -1,0 +1,92 @@
+.forecast-description {
+  position: relative;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-around;
+  margin-top: 2vw;
+
+}
+
+.forecast-description::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 1px;
+  background-color: var(--main);
+  left: 50%;
+}
+
+.temp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.temp-item {
+  text-align: center;
+}
+
+.temp-label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.temp-value {
+  font-size: 22px;
+}
+
+.sizeSvg svg {
+  width: 300px;
+  height: 300px;
+}
+
+.wind-direction {
+  position: relative;
+  margin-top: 5px;
+}
+
+.wind-direction span::after,
+.wind-direction span::before {
+
+  position: absolute;
+}
+
+.wind-direction span:nth-child(1)::after {
+  top: 0;
+  content: 'С';
+  right: 50%;
+
+  transform: translate(50%, -60%);
+}
+
+.wind-direction span:nth-child(1)::before {
+
+  content: 'Ю';
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.wind-direction span:nth-child(2)::after {
+  content: 'З';
+  left: 0;
+  top: 50%;
+
+  transform: translate(-40%, -50%);
+}
+
+.wind-direction span:nth-child(2)::before {
+  content: 'В';
+  right: 0;
+  top: 50%;
+  transform: translate(60%, -50%);
+}
+
+
+@media (max-width: 767px) {
+  .sizeSvg svg {
+    width: 200px;
+    height: 200px;
+  }
+}

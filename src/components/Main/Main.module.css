@@ -1,0 +1,59 @@
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'today today tomorrow'
+    'today today after-tomorrow'
+  ;
+  gap: 1vw;
+
+}
+
+.main>div:nth-child(1) {
+  grid-area: today;
+}
+
+.main>div:nth-child(2) {
+  grid-area: tomorrow;
+}
+
+.main>div:nth-child(3) {
+  grid-area: after-tomorrow;
+}
+
+.today {
+  grid-area: today;
+}
+
+.tomorrow {
+  grid-area: tomorrow;
+}
+
+.after-tomorrow {
+  grid-area: after-tomorrow;
+}
+
+@media (max-width: 991px) {
+  .main {
+
+    grid-template-areas:
+      'today today'
+      ' tomorrow after-tomorrow'
+    ;
+
+
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+
+    grid-template-areas:
+      'today'
+      ' tomorrow'
+      'after-tomorrow'
+    ;
+
+
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+  width: 100%;
+  flex-wrap: wrap; */
+}
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+  'hFullLocation hFullLocation hFullLocation'
+  'hViewLocation hSearchPanel hSwitchTheme';
+  gap: 1vw;
+  width: 100%;
+
+
+}
+
+@media (max-width: 991px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    'hFullLocation hFullLocation'
+    'hViewLocation hSwitchTheme '
+    ' hSearchPanel hSearchPanel';
+    gap: 2vw;
+  }
+}
+
+
